@@ -1,4 +1,4 @@
-module github.com/cloudflare/cfssl
+module github.com/sgorbunov/cfssl
 
 go 1.14
 
@@ -55,5 +55,3 @@ require (
 	google.golang.org/genproto v0.0.0-20210510173355-fb37daa5cd7a // indirect
 	honnef.co/go/tools v0.1.4 // indirect
 )
-
-replace github.com/cloudflare/cfssl => github.com/sgorbunov/cfssl v1.6.1

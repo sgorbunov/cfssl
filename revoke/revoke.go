@@ -21,8 +21,8 @@ import (
 
 	"golang.org/x/crypto/ocsp"
 
-	"github.com/cloudflare/cfssl/helpers"
-	"github.com/cloudflare/cfssl/log"
+	"github.com/sgorbunov/cfssl/helpers"
+	"github.com/sgorbunov/cfssl/log"
 )
 
 // HTTPClient is an instance of http.Client that will be used for all HTTP requests.
@@ -34,6 +34,7 @@ var HTTPClient = http.DefaultClient
 var HardFail = false
 
 type AdditionalChecks func(*ocsp.Response) error
+
 var OCSPAdditionalChecks AdditionalChecks
 
 // CRLSet associates a PKIX certificate list with the URL the CRL is

@@ -21,10 +21,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/cloudflare/cfssl/errors"
-	"github.com/cloudflare/cfssl/helpers"
-	"github.com/cloudflare/cfssl/log"
-	"github.com/cloudflare/cfssl/ubiquity"
+	"github.com/sgorbunov/cfssl/errors"
+	"github.com/sgorbunov/cfssl/helpers"
+	"github.com/sgorbunov/cfssl/log"
+	"github.com/sgorbunov/cfssl/ubiquity"
 )
 
 // IntermediateStash contains the path to the directory where

@@ -5,10 +5,10 @@ import (
 	"encoding/json"
 	"errors"
 
-	"github.com/cloudflare/cfssl/cli"
-	"github.com/cloudflare/cfssl/csr"
-	"github.com/cloudflare/cfssl/helpers"
-	"github.com/cloudflare/cfssl/signer"
+	"github.com/sgorbunov/cfssl/cli"
+	"github.com/sgorbunov/cfssl/csr"
+	"github.com/sgorbunov/cfssl/helpers"
+	"github.com/sgorbunov/cfssl/signer"
 )
 
 var gencsrUsageText = `cfssl gencsr -- generate a csr from a private key with existing CSR json specification or certificate

@@ -10,12 +10,12 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/cloudflare/cfssl/api"
-	"github.com/cloudflare/cfssl/certdb"
-	"github.com/cloudflare/cfssl/errors"
-	"github.com/cloudflare/cfssl/helpers"
-	"github.com/cloudflare/cfssl/ocsp"
 	"github.com/jmoiron/sqlx/types"
+	"github.com/sgorbunov/cfssl/api"
+	"github.com/sgorbunov/cfssl/certdb"
+	"github.com/sgorbunov/cfssl/errors"
+	"github.com/sgorbunov/cfssl/helpers"
+	"github.com/sgorbunov/cfssl/ocsp"
 
 	"encoding/base64"
 

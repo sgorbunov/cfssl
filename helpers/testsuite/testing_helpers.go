@@ -15,8 +15,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/cloudflare/cfssl/config"
-	"github.com/cloudflare/cfssl/csr"
+	"github.com/sgorbunov/cfssl/config"
+	"github.com/sgorbunov/cfssl/csr"
 )
 
 // CFSSLServerData is the data with which a server is initialized. These fields

@@ -10,10 +10,10 @@ import (
 	"encoding/base64"
 	"errors"
 
-	"github.com/cloudflare/cfssl/certdb"
-	cferr "github.com/cloudflare/cfssl/errors"
-	"github.com/cloudflare/cfssl/helpers"
 	ct "github.com/google/certificate-transparency-go"
+	"github.com/sgorbunov/cfssl/certdb"
+	cferr "github.com/sgorbunov/cfssl/errors"
+	"github.com/sgorbunov/cfssl/helpers"
 	"golang.org/x/crypto/ocsp"
 )
 

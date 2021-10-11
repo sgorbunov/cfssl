@@ -12,11 +12,11 @@ import (
 	"os"
 	"testing"
 
-	"github.com/cloudflare/cfssl/certdb"
-	"github.com/cloudflare/cfssl/certdb/sql"
-	"github.com/cloudflare/cfssl/certdb/testdb"
-	"github.com/cloudflare/cfssl/helpers"
 	ct "github.com/google/certificate-transparency-go"
+	"github.com/sgorbunov/cfssl/certdb"
+	"github.com/sgorbunov/cfssl/certdb/sql"
+	"github.com/sgorbunov/cfssl/certdb/testdb"
+	"github.com/sgorbunov/cfssl/helpers"
 	"golang.org/x/crypto/ocsp"
 )
 

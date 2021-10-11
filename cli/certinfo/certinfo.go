@@ -7,11 +7,11 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/cloudflare/cfssl/certdb/dbconf"
-	"github.com/cloudflare/cfssl/certdb/sql"
-	"github.com/cloudflare/cfssl/certinfo"
-	"github.com/cloudflare/cfssl/cli"
 	"github.com/jmoiron/sqlx"
+	"github.com/sgorbunov/cfssl/certdb/dbconf"
+	"github.com/sgorbunov/cfssl/certdb/sql"
+	"github.com/sgorbunov/cfssl/certinfo"
+	"github.com/sgorbunov/cfssl/cli"
 )
 
 // Usage text of 'cfssl certinfo'
