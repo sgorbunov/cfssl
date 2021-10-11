@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"runtime"
 
-	"github.com/cloudflare/cfssl/cli"
+	"github.com/sgorbunov/cfssl/cli"
 )
 
 var (

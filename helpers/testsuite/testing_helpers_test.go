@@ -14,8 +14,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/cloudflare/cfssl/csr"
-	"github.com/cloudflare/cfssl/helpers"
+	"github.com/sgorbunov/cfssl/csr"
+	"github.com/sgorbunov/cfssl/helpers"
 )
 
 const (

@@ -3,7 +3,7 @@ package selfsign
 import (
 	"testing"
 
-	"github.com/cloudflare/cfssl/cli"
+	"github.com/sgorbunov/cfssl/cli"
 )
 
 func TestSelfSignMain(t *testing.T) {

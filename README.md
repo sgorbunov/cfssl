@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/cloudflare/cfssl.svg?branch=master)](https://travis-ci.org/cloudflare/cfssl)
 [![Coverage Status](http://codecov.io/github/cloudflare/cfssl/coverage.svg?branch=master)](http://codecov.io/github/cloudflare/cfssl?branch=master)
-[![GoDoc](https://godoc.org/github.com/cloudflare/cfssl?status.svg)](https://godoc.org/github.com/cloudflare/cfssl)
+[![GoDoc](https://godoc.org/github.com/sgorbunov/cfssl?status.svg)](https://godoc.org/github.com/sgorbunov/cfssl)
 
 ## CloudFlare's PKI/TLS toolkit
 
@@ -61,10 +61,10 @@ You can set the `GOOS` and `GOARCH` environment variables to have Go cross compi
 ### Installation
 
 Installation requires a [working Go 1.14+ installation](http://golang.org/doc/install).
-Alternatively, [prebuilt binaries are available](https://github.com/cloudflare/cfssl/releases)
+Alternatively, [prebuilt binaries are available](https://github.com/sgorbunov/cfssl/releases)
 
 ```
-$ go get github.com/cloudflare/cfssl/cmd/cfssl
+$ go get github.com/sgorbunov/cfssl/cmd/cfssl
 ```
 
 will download, build, and install the CFSSL tool.
@@ -73,7 +73,7 @@ To install any of the other utility programs that are
 in this repo (for instance `cfssljson` in this case):
 
 ```
-$ go get github.com/cloudflare/cfssl/cmd/cfssljson
+$ go get github.com/sgorbunov/cfssl/cmd/cfssljson
 ```
 
 This will download, build, and install the CFSSLJSON tool.
@@ -81,7 +81,7 @@ This will download, build, and install the CFSSLJSON tool.
 And to simply install __all__ of the programs in this repo:
 
 ```
-$ go get github.com/cloudflare/cfssl/cmd/...
+$ go get github.com/sgorbunov/cfssl/cmd/...
 ```
 
 This will download, build, and install all of the utility programs
@@ -165,7 +165,7 @@ pools. In addition, platform metadata is specified through `-metadata`.
 The bundle files, metadata file (and auxiliary files) can be
 found at:
 
-        https://github.com/cloudflare/cfssl_trust
+        https://github.com/sgorbunov/cfssl_trust
 
 Specify PEM-encoded client certificate and key through `-cert` and
 `-key` respectively. If key is specified, the bundle will be built
@@ -353,7 +353,7 @@ for configuring and running the CA.
 verifying certificates. It can be installed with
 
 ```
-go get github.com/cloudflare/cfssl/cmd/mkbundle
+go get github.com/sgorbunov/cfssl/cmd/mkbundle
 ```
 
 It takes a collection of certificates, checks for CRL revocation (OCSP

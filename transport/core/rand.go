@@ -6,7 +6,7 @@ import (
 	"io"
 	mrand "math/rand"
 
-	"github.com/cloudflare/cfssl/log"
+	"github.com/sgorbunov/cfssl/log"
 )
 
 var seeded bool
