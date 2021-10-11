@@ -7,14 +7,14 @@ import (
 	"net/http"
 	"net/http/httputil"
 
+	"github.com/prometheus/client_golang/prometheus"
+	"github.com/prometheus/client_golang/prometheus/promauto"
 	"github.com/sgorbunov/cfssl/api"
 	"github.com/sgorbunov/cfssl/auth"
 	"github.com/sgorbunov/cfssl/helpers"
 	"github.com/sgorbunov/cfssl/log"
 	"github.com/sgorbunov/cfssl/signer"
 	"github.com/sgorbunov/cfssl/whitelist"
-	"github.com/prometheus/client_golang/prometheus"
-	"github.com/prometheus/client_golang/prometheus/promauto"
 )
 
 // A SignatureResponse contains only a certificate, as there is no other

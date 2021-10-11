@@ -24,6 +24,9 @@ import (
 	"os"
 	"time"
 
+	ct "github.com/google/certificate-transparency-go"
+	"github.com/google/certificate-transparency-go/client"
+	"github.com/google/certificate-transparency-go/jsonclient"
 	"github.com/sgorbunov/cfssl/certdb"
 	"github.com/sgorbunov/cfssl/config"
 	cferr "github.com/sgorbunov/cfssl/errors"
@@ -31,9 +34,6 @@ import (
 	"github.com/sgorbunov/cfssl/info"
 	"github.com/sgorbunov/cfssl/log"
 	"github.com/sgorbunov/cfssl/signer"
-	ct "github.com/google/certificate-transparency-go"
-	"github.com/google/certificate-transparency-go/client"
-	"github.com/google/certificate-transparency-go/jsonclient"
 
 	zx509 "github.com/zmap/zcrypto/x509"
 	"github.com/zmap/zlint/v3"

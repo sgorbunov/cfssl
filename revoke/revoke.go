@@ -34,6 +34,7 @@ var HTTPClient = http.DefaultClient
 var HardFail = false
 
 type AdditionalChecks func(*ocsp.Response) error
+
 var OCSPAdditionalChecks AdditionalChecks
 
 // CRLSet associates a PKIX certificate list with the URL the CRL is

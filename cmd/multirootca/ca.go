@@ -8,6 +8,7 @@ import (
 	"net"
 	"net/http"
 
+	"github.com/prometheus/client_golang/prometheus/promhttp"
 	"github.com/sgorbunov/cfssl/api/info"
 	"github.com/sgorbunov/cfssl/certdb/sql"
 	"github.com/sgorbunov/cfssl/log"
@@ -15,7 +16,6 @@ import (
 	"github.com/sgorbunov/cfssl/signer"
 	"github.com/sgorbunov/cfssl/signer/local"
 	"github.com/sgorbunov/cfssl/whitelist"
-	"github.com/prometheus/client_golang/prometheus/promhttp"
 
 	_ "github.com/go-sql-driver/mysql" // import to support MySQL
 	_ "github.com/lib/pq"              // import to support Postgres

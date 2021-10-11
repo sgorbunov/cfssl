@@ -10,12 +10,12 @@ import (
 	"net/http"
 	"time"
 
+	"github.com/jmoiron/sqlx/types"
 	"github.com/sgorbunov/cfssl/api"
 	"github.com/sgorbunov/cfssl/certdb"
 	"github.com/sgorbunov/cfssl/errors"
 	"github.com/sgorbunov/cfssl/helpers"
 	"github.com/sgorbunov/cfssl/ocsp"
-	"github.com/jmoiron/sqlx/types"
 
 	"encoding/base64"
 
@@ -23,7 +23,7 @@ import (
 )
 
 // This is patterned on
-// https://github.com/sgorbunov/cfssl/blob/master/api/revoke/revoke.go. This
+// https://github.com/cloudflare/cfssl/blob/master/api/revoke/revoke.go. This
 // file defines an HTTP endpoint handler that accepts certificates and
 // inserts them into a certdb, optionally also creating an OCSP
 // response for them. If so, it will also return the OCSP response as

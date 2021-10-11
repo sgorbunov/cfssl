@@ -6,12 +6,12 @@ import (
 	"os"
 	"testing"
 
+	"github.com/kisom/goutils/assert"
 	"github.com/sgorbunov/cfssl/config"
 	"github.com/sgorbunov/cfssl/csr"
 	"github.com/sgorbunov/cfssl/helpers"
 	"github.com/sgorbunov/cfssl/initca"
 	"github.com/sgorbunov/cfssl/selfsign"
-	"github.com/kisom/goutils/assert"
 )
 
 func tempName() (string, error) {
