@@ -16,12 +16,12 @@ import (
 	"strings"
 	"time"
 
-	"github.com/cloudflare/cfssl/certdb"
-	"github.com/cloudflare/cfssl/config"
-	"github.com/cloudflare/cfssl/csr"
-	cferr "github.com/cloudflare/cfssl/errors"
-	"github.com/cloudflare/cfssl/helpers"
-	"github.com/cloudflare/cfssl/info"
+	"github.com/sgorbunov/cfssl/certdb"
+	"github.com/sgorbunov/cfssl/config"
+	"github.com/sgorbunov/cfssl/csr"
+	cferr "github.com/sgorbunov/cfssl/errors"
+	"github.com/sgorbunov/cfssl/helpers"
+	"github.com/sgorbunov/cfssl/info"
 )
 
 // Subject contains the information that should be used to override the

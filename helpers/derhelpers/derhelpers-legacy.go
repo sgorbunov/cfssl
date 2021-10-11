@@ -10,7 +10,7 @@ import (
 	"crypto/rsa"
 	"crypto/x509"
 
-	cferr "github.com/cloudflare/cfssl/errors"
+	cferr "github.com/sgorbunov/cfssl/errors"
 	"golang.org/x/crypto/ed25519"
 )
 

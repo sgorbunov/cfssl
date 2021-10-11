@@ -7,12 +7,12 @@ import (
 	"net/http"
 	"net/http/httputil"
 
-	"github.com/cloudflare/cfssl/api"
-	"github.com/cloudflare/cfssl/auth"
-	"github.com/cloudflare/cfssl/helpers"
-	"github.com/cloudflare/cfssl/log"
-	"github.com/cloudflare/cfssl/signer"
-	"github.com/cloudflare/cfssl/whitelist"
+	"github.com/sgorbunov/cfssl/api"
+	"github.com/sgorbunov/cfssl/auth"
+	"github.com/sgorbunov/cfssl/helpers"
+	"github.com/sgorbunov/cfssl/log"
+	"github.com/sgorbunov/cfssl/signer"
+	"github.com/sgorbunov/cfssl/whitelist"
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promauto"
 )

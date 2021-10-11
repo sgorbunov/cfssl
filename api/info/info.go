@@ -6,11 +6,11 @@ import (
 	"io/ioutil"
 	"net/http"
 
-	"github.com/cloudflare/cfssl/api"
-	"github.com/cloudflare/cfssl/errors"
-	"github.com/cloudflare/cfssl/info"
-	"github.com/cloudflare/cfssl/log"
-	"github.com/cloudflare/cfssl/signer"
+	"github.com/sgorbunov/cfssl/api"
+	"github.com/sgorbunov/cfssl/errors"
+	"github.com/sgorbunov/cfssl/info"
+	"github.com/sgorbunov/cfssl/log"
+	"github.com/sgorbunov/cfssl/signer"
 )
 
 // Handler is a type that contains the root certificates for the CA,
