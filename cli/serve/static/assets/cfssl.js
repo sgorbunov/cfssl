@@ -122,7 +122,7 @@
             ]),
             m('ul.nav.navbar-nav.navbar-right', [
               navLink('a', '/packages', Tformat('common.packages')),
-              m('li', m('a[href="https://github.com/cloudflare/cfssl"]', 'GitHub')),
+              m('li', m('a[href="https://github.com/sgorbunov/cfssl"]', 'GitHub')),
             ])
           ])
         ])
@@ -139,7 +139,7 @@
       }, [
         m('p', [
           'Code licensed under ',
-          m('a[href="https://github.com/cloudflare/cfssl/blob/master/LICENSE"]', 'BSD-2-Clause'),
+          m('a[href="https://github.com/sgorbunov/cfssl/blob/master/LICENSE"]', 'BSD-2-Clause'),
           '.'
         ])
       ])
@@ -230,7 +230,7 @@
           'See ',
           m('a[href="https://blog.cloudflare.com/introducing-cfssl"]', 'blog post'),
           ' or ',
-          m('a[href="https://github.com/cloudflare/cfssl"]', 'contribute on GitHub'),
+          m('a[href="https://github.com/sgorbunov/cfssl"]', 'contribute on GitHub'),
           '.'
         ])
       ]);
@@ -246,7 +246,7 @@
       return appWrapper([
         m('h1.page-header', Tformat('common.packages')),
         m('ul', [
-          m('li', m('a[href="https://github.com/cloudflare/cfssl/releases"]', 'Download binaries (GitHub)')),
+          m('li', m('a[href="https://github.com/sgorbunov/cfssl/releases"]', 'Download binaries (GitHub)')),
           m('li', m('a[href="https://hub.docker.com/r/cloudflare/cfssl"]', 'Docker images')),
           m('li', m('a[href="https://pkg.cloudflare.com/"]', 'Install from apt or yum'))
         ])

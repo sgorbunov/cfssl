@@ -15,7 +15,7 @@ builds:
       - amd64
     main: ./cmd/cfssl
     ldflags:
-      - -s -w -X github.com/cloudflare/cfssl/cli/version.version={{.Version}}
+      - -s -w -X github.com/sgorbunov/cfssl/cli/version.version={{.Version}}
   - id: cfssl-linux
     binary: cfssl
     goos:
@@ -24,7 +24,7 @@ builds:
       - amd64
     main: ./cmd/cfssl
     ldflags:
-      - -s -w -X github.com/cloudflare/cfssl/cli/version.version={{.Version}}
+      - -s -w -X github.com/sgorbunov/cfssl/cli/version.version={{.Version}}
       - -linkmode external -extldflags "-static"
     env:
       - CC=/usr/bin/musl-gcc
@@ -39,7 +39,7 @@ builds:
       - amd64
     main: ./cmd/cfssl
     ldflags:
-      - -s -w -X github.com/cloudflare/cfssl/cli/version.version={{.Version}}
+      - -s -w -X github.com/sgorbunov/cfssl/cli/version.version={{.Version}}
   - id: cfssl-bundle-darwin
     binary: cfssl-bundle
     env:
@@ -51,7 +51,7 @@ builds:
       - amd64
     main: ./cmd/cfssl-bundle
     ldflags:
-      - -s -w -X github.com/cloudflare/cfssl/cli/version.version={{.Version}}
+      - -s -w -X github.com/sgorbunov/cfssl/cli/version.version={{.Version}}
   - id: cfssl-bundle-linux
     binary: cfssl-bundle
     goos:
@@ -60,7 +60,7 @@ builds:
       - amd64
     main: ./cmd/cfssl-bundle
     ldflags:
-      - -s -w -X github.com/cloudflare/cfssl/cli/version.version={{.Version}}
+      - -s -w -X github.com/sgorbunov/cfssl/cli/version.version={{.Version}}
       - -linkmode external -extldflags "-static"
     env:
       - CC=/usr/bin/musl-gcc
@@ -75,7 +75,7 @@ builds:
       - amd64
     main: ./cmd/cfssl-bundle
     ldflags:
-      - -s -w -X github.com/cloudflare/cfssl/cli/version.version={{.Version}}
+      - -s -w -X github.com/sgorbunov/cfssl/cli/version.version={{.Version}}
   - id: cfssl-certinfo-darwin
     binary: cfssl-certinfo
     env:
@@ -87,7 +87,7 @@ builds:
       - amd64
     main: ./cmd/cfssl-certinfo
     ldflags:
-      - -s -w -X github.com/cloudflare/cfssl/cli/version.version={{.Version}}
+      - -s -w -X github.com/sgorbunov/cfssl/cli/version.version={{.Version}}
   - id: cfssl-certinfo-linux
     binary: cfssl-certinfo
     goos:
@@ -96,7 +96,7 @@ builds:
       - amd64
     main: ./cmd/cfssl-certinfo
     ldflags:
-      - -s -w -X github.com/cloudflare/cfssl/cli/version.version={{.Version}}
+      - -s -w -X github.com/sgorbunov/cfssl/cli/version.version={{.Version}}
       - -linkmode external -extldflags "-static"
     env:
       - CC=/usr/bin/musl-gcc
@@ -111,7 +111,7 @@ builds:
       - amd64
     main: ./cmd/cfssl-certinfo
     ldflags:
-      - -s -w -X github.com/cloudflare/cfssl/cli/version.version={{.Version}}
+      - -s -w -X github.com/sgorbunov/cfssl/cli/version.version={{.Version}}
   - id: cfssl-newkey-darwin
     binary: cfssl-newkey
     env:
@@ -123,7 +123,7 @@ builds:
       - amd64
     main: ./cmd/cfssl-newkey
     ldflags:
-      - -s -w -X github.com/cloudflare/cfssl/cli/version.version={{.Version}}
+      - -s -w -X github.com/sgorbunov/cfssl/cli/version.version={{.Version}}
   - id: cfssl-newkey-linux
     binary: cfssl-newkey
     goos:
@@ -132,7 +132,7 @@ builds:
       - amd64
     main: ./cmd/cfssl-newkey
     ldflags:
-      - -s -w -X github.com/cloudflare/cfssl/cli/version.version={{.Version}}
+      - -s -w -X github.com/sgorbunov/cfssl/cli/version.version={{.Version}}
       - -linkmode external -extldflags "-static"
     env:
       - CC=/usr/bin/musl-gcc
@@ -147,7 +147,7 @@ builds:
       - amd64
     main: ./cmd/cfssl-newkey
     ldflags:
-      - -s -w -X github.com/cloudflare/cfssl/cli/version.version={{.Version}}
+      - -s -w -X github.com/sgorbunov/cfssl/cli/version.version={{.Version}}
   - id: cfssl-scan-darwin
     binary: cfssl-scan
     env:
@@ -159,7 +159,7 @@ builds:
       - amd64
     main: ./cmd/cfssl-scan
     ldflags:
-      - -s -w -X github.com/cloudflare/cfssl/cli/version.version={{.Version}}
+      - -s -w -X github.com/sgorbunov/cfssl/cli/version.version={{.Version}}
   - id: cfssl-scan-linux
     binary: cfssl-scan
     goos:
@@ -168,7 +168,7 @@ builds:
       - amd64
     main: ./cmd/cfssl-scan
     ldflags:
-      - -s -w -X github.com/cloudflare/cfssl/cli/version.version={{.Version}}
+      - -s -w -X github.com/sgorbunov/cfssl/cli/version.version={{.Version}}
       - -linkmode external -extldflags "-static"
     env:
       - CC=/usr/bin/musl-gcc
@@ -183,7 +183,7 @@ builds:
       - amd64
     main: ./cmd/cfssl-scan
     ldflags:
-      - -s -w -X github.com/cloudflare/cfssl/cli/version.version={{.Version}}
+      - -s -w -X github.com/sgorbunov/cfssl/cli/version.version={{.Version}}
   - id: cfssljson-darwin
     binary: cfssljson
     env:
@@ -195,7 +195,7 @@ builds:
       - amd64
     main: ./cmd/cfssljson
     ldflags:
-      - -s -w -X github.com/cloudflare/cfssl/cli/version.version={{.Version}}
+      - -s -w -X github.com/sgorbunov/cfssl/cli/version.version={{.Version}}
   - id: cfssljson-linux
     binary: cfssljson
     goos:
@@ -204,7 +204,7 @@ builds:
       - amd64
     main: ./cmd/cfssljson
     ldflags:
-      - -s -w -X github.com/cloudflare/cfssl/cli/version.version={{.Version}}
+      - -s -w -X github.com/sgorbunov/cfssl/cli/version.version={{.Version}}
       - -linkmode external -extldflags "-static"
     env:
       - CC=/usr/bin/musl-gcc
@@ -219,7 +219,7 @@ builds:
       - amd64
     main: ./cmd/cfssljson
     ldflags:
-      - -s -w -X github.com/cloudflare/cfssl/cli/version.version={{.Version}}
+      - -s -w -X github.com/sgorbunov/cfssl/cli/version.version={{.Version}}
   - id: mkbundle-darwin
     binary: mkbundle
     env:
@@ -231,7 +231,7 @@ builds:
       - amd64
     main: ./cmd/mkbundle
     ldflags:
-      - -s -w -X github.com/cloudflare/cfssl/cli/version.version={{.Version}}
+      - -s -w -X github.com/sgorbunov/cfssl/cli/version.version={{.Version}}
   - id: mkbundle-linux
     binary: mkbundle
     goos:
@@ -240,7 +240,7 @@ builds:
       - amd64
     main: ./cmd/mkbundle
     ldflags:
-      - -s -w -X github.com/cloudflare/cfssl/cli/version.version={{.Version}}
+      - -s -w -X github.com/sgorbunov/cfssl/cli/version.version={{.Version}}
       - -linkmode external -extldflags "-static"
     env:
       - CC=/usr/bin/musl-gcc
@@ -255,7 +255,7 @@ builds:
       - amd64
     main: ./cmd/mkbundle
     ldflags:
-      - -s -w -X github.com/cloudflare/cfssl/cli/version.version={{.Version}}
+      - -s -w -X github.com/sgorbunov/cfssl/cli/version.version={{.Version}}
   - id: multirootca-darwin
     binary: multirootca
     env:
@@ -267,7 +267,7 @@ builds:
       - amd64
     main: ./cmd/multirootca
     ldflags:
-      - -s -w -X github.com/cloudflare/cfssl/cli/version.version={{.Version}}
+      - -s -w -X github.com/sgorbunov/cfssl/cli/version.version={{.Version}}
   - id: multirootca-linux
     binary: multirootca
     goos:
@@ -276,7 +276,7 @@ builds:
       - amd64
     main: ./cmd/multirootca
     ldflags:
-      - -s -w -X github.com/cloudflare/cfssl/cli/version.version={{.Version}}
+      - -s -w -X github.com/sgorbunov/cfssl/cli/version.version={{.Version}}
       - -linkmode external -extldflags "-static"
     env:
       - CC=/usr/bin/musl-gcc
@@ -291,7 +291,7 @@ builds:
       - amd64
     main: ./cmd/multirootca
     ldflags:
-      - -s -w -X github.com/cloudflare/cfssl/cli/version.version={{.Version}}
+      - -s -w -X github.com/sgorbunov/cfssl/cli/version.version={{.Version}}
 archives:
   - format: binary
 release:
