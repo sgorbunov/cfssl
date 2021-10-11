@@ -33,6 +33,9 @@ var HTTPClient = http.DefaultClient
 // verification to fail (a hard failure).
 var HardFail = false
 
+type AdditionalChecks func(*ocsp.Response) error
+var OCSPAdditionalChecks AdditionalChecks
+
 // CRLSet associates a PKIX certificate list with the URL the CRL is
 // fetched from.
 var CRLSet = map[string]*pkix.CertificateList{}
@@ -263,6 +266,13 @@ func certIsRevokedOCSP(leaf *x509.Certificate, strict bool) (revoked, ok bool, e
 
 		// There wasn't an error fetching the OCSP status.
 		ok = true
+
+		if OCSPAdditionalChecks != nil {
+			err = OCSPAdditionalChecks(resp)
+			if err != nil {
+				ok = false
+			}
+		}
 
 		if resp.Status != ocsp.Good {
 			// The certificate was revoked.
